@@ -31,7 +31,7 @@ function BottomHeader() {
           </span>
         </span>
         {showCategory && (
-          <ul className="absolute top-12 w-[110%] cursor-default rounded-md bg-white text-black shadow-lg">
+          <ul className="absolute top-12 z-50 w-[110%] cursor-default rounded-md bg-white text-black shadow-lg">
             <li className="px-6">
               <Link to={"/category/:cateName"} className="block py-3">
                 Vegetables

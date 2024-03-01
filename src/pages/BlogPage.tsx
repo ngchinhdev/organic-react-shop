@@ -1,5 +1,13 @@
+import Header from "../ui/header";
+
 function BlogPage() {
-  return <div>Blog Page</div>;
+  return (
+    <div>
+      {" "}
+      <Header />
+      Blog Page
+    </div>
+  );
 }
 
 export default BlogPage;

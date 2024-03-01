@@ -15,3 +15,21 @@ body {
     background-color: #3f6212;
     color: white;
 }
+
+@keyframes left-to-right {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animate-left-right {
+    animation: left-to-right .25s linear;
+}
+
+.animate-left-right-reverse {
+    animation: left-to-right .25s linear reverse;
+}

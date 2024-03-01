@@ -8,6 +8,7 @@ import { IoMenu } from "react-icons/io5";
 
 import logo from "../../assets/images/logo-header.png";
 import NavOverlay from "./NavOverlay";
+import { Link } from "react-router-dom";
 
 type ItemType = {
   icon: ReactNode;
@@ -43,9 +44,13 @@ function MiddleHeader() {
       >
         <IoMenu />
       </div>
-      {showMobileNav && <NavOverlay />}
+      {showMobileNav && (
+        <NavOverlay onHandleShowMobileNav={handleShowMobileNav} />
+      )}
       <div>
-        <img src={logo} alt="Logo" className="w-20 xl:w-24" />
+        <Link to="/">
+          <img src={logo} alt="Logo" className="w-20 xl:w-24" />
+        </Link>
       </div>
       <div className="hidden lg:flex lg:items-center lg:gap-10 xl:gap-16">
         <Item

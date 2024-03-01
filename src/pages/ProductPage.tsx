@@ -1,5 +1,12 @@
+import Header from "../ui/header";
+
 function ProductPage() {
-  return <div>Product Page</div>;
+  return (
+    <div>
+      <Header />
+      Product Page
+    </div>
+  );
 }
 
 export default ProductPage;

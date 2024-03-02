@@ -16,6 +16,17 @@ body {
     color: white;
 }
 
+@layer utilities {
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+}
+
 @keyframes left-to-right {
     0% {
         transform: translateX(-100%);

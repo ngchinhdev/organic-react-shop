@@ -1,5 +1,6 @@
 import Banner from "../components/home/Banner";
 import Categories from "../components/home/Categories";
+import ProductsFilter from "../components/home/ProductsFilter";
 import Header from "../ui/header";
 
 function HomePage() {
@@ -8,6 +9,7 @@ function HomePage() {
       <Header />
       <Banner />
       <Categories />
+      <ProductsFilter />
     </div>
   );
 }

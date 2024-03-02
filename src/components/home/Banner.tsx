@@ -14,7 +14,7 @@ function Banner() {
         <p className="mb-6 border-s-2 border-lime-800 ps-3 text-2xl text-slate-600">
           SALE UP TO <span className="font-semibold text-white">48%</span> OFF
         </p>
-        <Button to="/shop">
+        <Button type="primary" to="/shop">
           Shop now <FaArrowRightLong />
         </Button>
       </div>

@@ -9,12 +9,19 @@ import cateimg from "../../assets/images/Vegetable.jpg";
 function Categories() {
   const settings: Settings = {
     arrows: false,
-    infinite: true,
     speed: 500,
     autoplay: true,
-    slidesToShow: 3,
+    slidesToShow: 6,
     slidesToScroll: 1,
+    draggable: false,
+    pauseOnHover: false,
     responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 5,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -25,6 +32,7 @@ function Categories() {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
+          draggable: true,
         },
       },
       {
@@ -38,12 +46,12 @@ function Categories() {
 
   return (
     <section className="mt-10 px-4 lg:px-8">
-      <h1 className="mb-8 text-center text-4xl font-medium text-lime-700">
+      <h1 className="mb-8 text-center text-4xl font-medium text-lime-700 md:text-left">
         Categories
       </h1>
-      <div className="overflow-hidden [&_.slick-slide]:w-44 md:[&_.slick-slide]:w-56 [&_.slick-track]:flex [&_.slick-track]:gap-4">
+      <div className="overflow-hidden">
         <Slider {...settings}>
-          <div className="w-44 text-center ">
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
             <Link to="/shop">
               <img
                 src={cateimg}
@@ -53,7 +61,7 @@ function Categories() {
               <h4 className="mt-2">Vegetable</h4>
             </Link>
           </div>
-          <div className="w-44 text-center ">
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
             <Link to="/shop">
               <img
                 src={cateimg}
@@ -63,7 +71,37 @@ function Categories() {
               <h4 className="mt-2">Vegetable</h4>
             </Link>
           </div>
-          <div className="w-44 text-center ">
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
+            <Link to="/shop">
+              <img
+                src={cateimg}
+                alt=""
+                className="w-full rounded-xl border-[1px] border-gray-200 p-2 hover:border-lime-800 md:w-56"
+              />
+              <h4 className="mt-2">Vegetable</h4>
+            </Link>
+          </div>
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
+            <Link to="/shop">
+              <img
+                src={cateimg}
+                alt=""
+                className="w-full rounded-xl border-[1px] border-gray-200 p-2 hover:border-lime-800 md:w-56"
+              />
+              <h4 className="mt-2">Vegetable</h4>
+            </Link>
+          </div>
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
+            <Link to="/shop">
+              <img
+                src={cateimg}
+                alt=""
+                className="w-full rounded-xl border-[1px] border-gray-200 p-2 hover:border-lime-800 md:w-56"
+              />
+              <h4 className="mt-2">Vegetable</h4>
+            </Link>
+          </div>
+          <div className="w-40 text-center sm:w-44 lg:w-52 ">
             <Link to="/shop">
               <img
                 src={cateimg}

@@ -1,12 +1,5 @@
-import Header from "../ui/header";
-
 function ContactPage() {
-  return (
-    <div>
-      <Header />
-      Contact
-    </div>
-  );
+  return <div>Contact</div>;
 }
 
 export default ContactPage;

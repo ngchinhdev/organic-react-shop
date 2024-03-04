@@ -11,7 +11,7 @@ function Button({ children, to, type }: ButtonProps) {
   let typeCss = "";
 
   if (type === "primary")
-    typeCss = "gap-2 rounded-3xl bg-lime-500 px-6 py-3 text-xl text-white";
+    typeCss = "gap-2 rounded-3xl bg-lime-700 px-6 py-3 text-xl text-white";
 
   if (type === "secondary")
     typeCss = "border-lime-900 border rounded-2xl py-2 px-5";

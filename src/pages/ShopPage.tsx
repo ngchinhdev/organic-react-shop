@@ -1,12 +1,5 @@
-import Header from "../ui/header";
-
 function ShopPage() {
-  return (
-    <div>
-      <Header />
-      Shop Page
-    </div>
-  );
+  return <div>Shop Page</div>;
 }
 
 export default ShopPage;

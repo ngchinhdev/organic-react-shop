@@ -16,6 +16,11 @@ body {
     color: white;
 }
 
+::-webkit-selection {
+    background-color: #3f6212;
+    color: white;
+}
+
 @layer utilities {
     .no-scrollbar::-webkit-scrollbar {
         display: none;
@@ -35,6 +40,20 @@ body {
     100% {
         transform: translateX(0);
     }
+}
+
+@keyframes header-anm {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.animation-header {
+    animation: header-anm .35s linear;
 }
 
 .animate-left-right {

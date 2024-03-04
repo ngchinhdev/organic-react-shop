@@ -29,7 +29,7 @@ function Item({ icon, heading, content }: ItemType) {
   );
 }
 
-function MiddleHeader() {
+function MiddleHeader({ isSticky }: { isSticky: boolean }) {
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
   const handleShowMobileNav = () => {
@@ -37,7 +37,9 @@ function MiddleHeader() {
   };
 
   return (
-    <div className="flex items-center justify-between bg-lime-700 p-4 text-white lg:p-8">
+    <div
+      className={`flex items-center justify-between bg-lime-700 p-4 text-white ${isSticky ? "lg:px-8 lg:py-4" : "lg:p-8"}`}
+    >
       <div
         className="cursor-pointer text-3xl lg:hidden"
         onClick={handleShowMobileNav}
